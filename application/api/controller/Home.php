@@ -1,5 +1,6 @@
 <?php
 namespace app\api\controller;
+use think\cache\driver\Redis;
 use think\Db;
 use think\Log;
 use think\Request;
@@ -47,5 +48,16 @@ class Home extends \BdmController
     public function log()
     {
         Log::write('测试一波日志记录');
+    }
+
+    public function redis()
+    {
+        $redis = new \Lib\Redis();
+        echo '<pre/>';
+        var_dump($redis);
+        $redis2 = new \Lib\Redis();
+        var_dump($redis2);
+        $redis->save('uid_6','xiaopang');
+        echo $redis->get('uid_6');
     }
 }

@@ -23,7 +23,7 @@
         "psr-4": {
             "app\\": "application"
         },
-        "files":["lib/BdmController.php"]
+        "files":["lib/BdmController.php","lib/Redis.php"]
     },
     "extra": {
         "think-path": "thinkphp"
