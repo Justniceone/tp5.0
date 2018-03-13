@@ -249,4 +249,10 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+
+    //app设置
+    'app'                =>[
+        'key'       =>  'gasdawdoajdoasjghaojghaf',
+        'expire'    =>  86400,
+    ],
 ];

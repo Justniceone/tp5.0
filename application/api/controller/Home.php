@@ -54,9 +54,6 @@ class Home extends \BdmController
     {
         $redis = new \Lib\Redis();
         echo '<pre/>';
-        var_dump($redis);
-        $redis2 = new \Lib\Redis();
-        var_dump($redis2);
         $redis->save('uid_6','xiaopang');
         echo $redis->get('uid_6');
     }
