@@ -36,4 +36,9 @@ class Redis
     {
         return $this->redis->get($key);
     }
+
+    public function ttl($key)
+    {
+        return $this->redis->ttl($key);
+    }
 }
